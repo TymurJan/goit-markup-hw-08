@@ -31,14 +31,14 @@
                 </ul>
             </nav>
             <ul class="header-contacts list">
-                <li class="item">
+                <li class="contacts-item">
                     <a href="info@devstudio.com" class="contacts-link link">
                         <svg class="header-icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="item">
+                <li class="contacts-item">
                     <a href="tel:+380961111111" class="contacts-link link">
                         <svg class="header-icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-mobil"></use>
@@ -54,7 +54,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>                        
         </section>
        <!--Особенносьти-->
@@ -107,13 +107,22 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
                     <li class="work-item">
-                        <img src="./images/img1.jpg" alt="foto" width="370px" />
+                        <div class="work-images">
+                            <img src="./images/img1.jpg" alt="foto" width="370px" />
+                            <h3 class="work-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+                        </div>             
                     </li>
                     <li class="work-item">
-                        <img src="./images/img2.jpg" alt="foto" width="370px" />
+                        <div class="work-images">
+                            <img src="./images/img2.jpg" alt="foto" width="370px" />
+                            <h3 class="work-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                        </div>                        
                     </li>
                     <li class="work-item">
-                        <img src="./images/img3.jpg" alt="foto" width="370px" />
+                        <div class="work-images">
+                            <img src="./images/img3.jpg" alt="foto" width="370px" />
+                            <h3 class="work-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                        </div>                        
                     </li>
                 </ul>
             </div>            
@@ -328,5 +337,15 @@
         </div>          
         
     </footer>
+    <div class="bakcdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="modal-icon">
+                    <use href="./images/symbol-defs.svg#icon-X"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script> 
 </body>
-</html>
+</html> 
