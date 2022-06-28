@@ -337,13 +337,30 @@
         </div>          
         
     </footer>
-    <div class="bakcdrop is-hidden" data-modal>
+    <div class="bakcdrop is-hidde" data-modal>
         <div class="modal">
-            <button class="modal-button" data-modal-close>
+            <button class="modal-close-btn" data-modal-close>
                 <svg class="modal-icon">
                     <use href="./images/symbol-defs.svg#icon-X"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Имя</label>
+                    <input type="text" class="modal-input" name="user-name" id="user-name" required minlength="3"/>
+                </div>
+                <label for="user-tel" class="modal-label">Телефон</label>
+                <input type="tel" class="modal-input" name="user-tel" required/>
+
+                <label for="user-email" class="modal-label">Почта</label>
+                <input type="email" class="modal-input" name="user-email" required/>
+
+                <label for="user-coment" class="modal-label">Коментарий</label>
+                <textarea name="user-coment" id="user-coment" cols="30" rows="10"></textarea>
+                 placeholder="Введите текст" />
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script> 
