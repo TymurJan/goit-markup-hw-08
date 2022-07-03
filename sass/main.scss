@@ -1,7 +1,9 @@
-@import "./utils/vars";
+@import "./utils/variables";
 @import "./base/reset";
 
 @import "./components/container";
+@import "./components/backdrop";
+@import "./components/modal";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -9,6 +11,6 @@
 @import "./layout/about";
 @import "./layout/customers";
 @import "./layout/footer";
-@import "./layout/modal";
+
 @import "./layout/navigation";
 @import "./layout/projects";
