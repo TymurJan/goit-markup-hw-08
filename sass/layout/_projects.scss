@@ -17,6 +17,7 @@
             margin-bottom: 0;
         }
     }
+
     &__link {
         display: block;
 
@@ -28,10 +29,12 @@
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
     }
+
     &__images {
         position: relative;
         overflow: hidden;
     }
+
     &__text {
         position: absolute;
         width: 100%;
@@ -55,6 +58,7 @@
             transform: translateY(0);
         }
     }
+    
     .projects__title {
         margin: 0;
         margin-bottom: 4px;
