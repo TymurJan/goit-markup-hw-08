@@ -56,6 +56,14 @@ body {
   margin: -1px;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 .section {
   padding-top: 94px;
 }
@@ -400,16 +408,11 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.logo--header {
   color: var(--secondary-text-color);
 }
 
-.accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -750,18 +753,11 @@ body {
 
 .footer {
   background-color: #2f303a;
-}
-
-.accent-secondary {
-  color: #ffffff;
-}
-
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-flex {
+.footer__field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,19 +766,17 @@ body {
           align-items: center;
 }
 
-.footer-logo {
+.logo--footer {
   display: block;
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
-.info-link {
+.logo__accent-secondary {
+  color: #ffffff;
+}
+
+.info-list__item {
   padding: 0px;
   margin-bottom: 9px;
   font-style: normal;
@@ -792,24 +786,21 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.info-link:last-child {
+.info-list__item:last-child {
   margin-bottom: 0;
 }
 
-.address-link {
+.address__link {
   color: #ffffff;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.info-link .contacts-link {
-  padding: 0;
+.address__link:hover, .address__link:focus {
+  color: var(--accent-color);
 }
 
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
+.contacts__link--size {
+  padding: 0;
 }
 
 /* ---------------------- */
@@ -823,8 +814,7 @@ body {
           flex-direction: column;
   margin-left: 70px;
 }
-
-.social-title {
+.social__title {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -834,48 +824,18 @@ body {
   color: #ffffff;
 }
 
-.footer-soc-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.soc--list {
+  padding: 0;
 }
 
-.footer-soc-item {
-  width: 44px;
-  height: 44px;
-}
-
-.footer-soc-item + .footer-soc-item {
-  margin-left: 10px;
-}
-
-.footer-soc-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
+.soc__link--invers {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.soc__link--invers:hover, .soc__link--invers:focus {
   background-color: var(--accent-color);
 }
 
-.footer-soc-icon {
+.soc__icon--invers {
   fill: var(--accent-hover-color);
 }
 
