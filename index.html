@@ -15,32 +15,32 @@
 <body>
     <!--Шапка страници-->
     <header class="header">
-      <div class="mane-nav container">
-            <nav class="header-nav  mane-nav">
+      <div class="nav container">
+            <nav class="header-nav nav">
                 <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
-                <ul class="nav-list list">
-                    <li class="item">
-                        <a href="./index.html" class="header-link link current">Студия</a>
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link link current">Студия</a>
                     </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="header-link link">Портфолио</a>
+                    <li class="nav__item">
+                        <a href="./portfolio.html" class="nav__link link">Портфолио</a>
                     </li>
-                    <li class="item">
-                        <a href="" class="header-link link">Контакты</a>
+                    <li class="nav__item">
+                        <a href="" class="nav__link link">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="header-contacts list">
-                <li class="contacts-item">
-                    <a href="info@devstudio.com" class="contacts-link link">
-                        <svg class="header-icon" width="16" height="12">
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a href="info@devstudio.com" class="contacts__link link">
+                        <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="contacts-item">
-                    <a href="tel:+380961111111" class="contacts-link link">
-                        <svg class="header-icon" width="16" height="12">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link link">
+                        <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-mobil"></use>
                         </svg>
                         +38 096 111 11 11</a>
@@ -53,50 +53,50 @@
         <!--Hero-->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>                        
         </section>
        <!--Особенносьти-->
         <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Особенносьти</h2>
-                <ul class="features-list list">
-                    <li class="features-item">
-                        <div class="features">
-                            <svg class="features-icon">
+                <ul class="features list">
+                    <li class="features__item">
+                        <div class="features__imges">
+                            <svg class="features__icon">
                                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Внимание к деталям</h3>
-                        <p class="text">Идейные соображения, а также начало повсionедневной работы по формированию позиции.</p>
+                        <h3 class="features__title">Внимание к деталям</h3>
+                        <p class="features__text">Идейные соображения, а также начало повсionедневной работы по формированию позиции.</p>
                     </li>
-                    <li class="features-item">
-                        <div class="features">
-                            <svg class="features-icon">
+                    <li class="features__item">
+                        <div class="features__imges">
+                            <svg class="features__icon">
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Пунктуальность</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <h3 class="features__title">Пунктуальность</h3>
+                        <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="features-item">
-                        <div class="features">
-                            <svg class="features-icon">
+                    <li class="features__item">
+                        <div class="features__imges">
+                            <svg class="features__icon">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Планирование</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <h3 class="features__title">Планирование</h3>
+                        <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="features-item">
-                        <div class="features">
-                            <svg class="features-icon">
+                    <li class="features__item">
+                        <div class="features__imges">
+                            <svg class="features__icon">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="features-title">Современные технологии</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <h3 class="features__title">Современные технологии</h3>
+                        <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>        
@@ -105,23 +105,23 @@
         <section class="section work">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="work-list list">
-                    <li class="work-item">
-                        <div class="work-images">
+                <ul class="work__list list">
+                    <li class="work__item">
+                        <div class="work__images">
                             <img src="./images/img1.jpg" alt="foto" width="370" />
-                            <h3 class="work-name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+                            <h3 class="work__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>             
                     </li>
-                    <li class="work-item">
-                        <div class="work-images">
+                    <li class="work__item">
+                        <div class="work__images">
                             <img src="./images/img2.jpg" alt="foto" width="370" />
-                            <h3 class="work-name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                            <h3 class="work__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>                        
                     </li>
-                    <li class="work-item">
-                        <div class="work-images">
+                    <li class="work__item">
+                        <div class="work__images">
                             <img src="./images/img3.jpg" alt="foto" width="370" />
-                            <h3 class="work-name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                            <h3 class="work__name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         </div>                        
                     </li>
                 </ul>
@@ -335,16 +335,16 @@
                 </ul>
             </div>
             <div class="mailing">
-                <b class="text-mailling">Подпишитесь на рассылку</b>                 
-                <form class="mailling-send">
-                    <div class="mailling-field">
-                        <input class="mailling-input" type="email" name="mailling-email" id="mailling-email" required placeholder="E-mail" />
-                        <label for="mailling-email" class="mailling-label">
+                <b class="mailing__text">Подпишитесь на рассылку</b>                 
+                <form class="mailing__send">
+                    <div class="mailing__field">
+                        <input class="mailing__input" type="email" name="mailing-email" id="mailling-email" required placeholder="E-mail" />
+                        <label for="mailing-email" class="mailing__label">
                             <!-- E-mail -->
                         </label>                        
                     </div>
-                    <button type="submit" class="mailling-button">Подписаться
-                        <svg class="mailling-icon" width="18" height="18">
+                    <button type="submit" class="mailing__button">Подписаться
+                        <svg class="mailing__icon" width="18" height="18">
                             <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>                                        
