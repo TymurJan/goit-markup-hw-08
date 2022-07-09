@@ -15,7 +15,7 @@
 
 <body>
     <!--Шапка страници-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container nav">
             <nav class="header-nav nav">
                 <a class="logo  logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -48,14 +48,14 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <!--Уникальный контент страници-->
     <main>
         <!--main-->
         <section class="section portfolio">
             <div class="container ">
                 <h1 class="visually-hidden">navigation</h1>
-                <ul class="navigation navigation--list list">
+                <!-- <ul class="navigation navigation--list list">
                     <li class="navigation__item">
                         <button type="button" class="navigation__btn link">Все</button>
                     </li>
@@ -71,12 +71,36 @@
                     <li class="navigation__item">
                         <button type="button" class="navigation__btn link">Маркетинг</button>
                     </li>
-                </ul>
+                </ul> -->
                 <ul class="projects list">
                     <li class="projects__item">
                         <a href="fgh" class="projects__link link">
                             <div class="projects__images">
-                                <img src="./images/img(1).jpg" alt="JPG" width="370">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/f4.jpg 1x, 
+                                            ./images/f4-2x.jpg 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/f4-tab.jpg 1x, 
+                                            ./images/f4-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/f4-mob.jpg 1x, 
+                                            ./images/f4-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/img(1).jpg" alt="JPG" width="370">
+                                </picture>
+                                
                                 <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>

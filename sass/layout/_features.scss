@@ -1,10 +1,15 @@
 .features {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     &__item {
-        width: 270px;
+        width: 100%;
 
-        &+& {
-            margin-left: 30px;
+        @include tablet {
+            width: 354px;            
+        }
+        @include desktop {
+            width: 270px;            
         }
     }
     &__imges {
@@ -15,10 +20,12 @@
         margin-bottom: 30px;
         background: #f5f4fa;
         border-radius: 4px;
+        
     }
     &__icon {
         width: 70px;
-        height: 70px;
+        max-width: 100%;
+        height: auto;
     }
     &__title {
         margin-top: 0;
@@ -34,8 +41,7 @@
         padding: 0;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.7;
+        line-height: 1.71;
         letter-spacing: 0.03em;
     }
 }
-

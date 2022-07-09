@@ -1,30 +1,83 @@
 .hero {
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    
     text-align: center;
     max-width: 1600px;
+
     background-color: #2f303a;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),        
+        url(/images/hero-bg-mob.jpg);
+        @include retina {
+            background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpg);
+             url(/images/hero-bg-mob-2x.jpg);
+        }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    &__title {
-        width: 696px;
+
+    @include tablet {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url(/images/hero-bg-tab.jpg);
+         @include retina {
+            background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url(/images/hero-bg-tab-2x.jpg);
+        }   
+    }
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url(/images/hero-bg.jpg);
+        @include retina {
+            background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url(/images/hero-bg-2x.jpg);
+        }
+    }
+    
+    
+    &__title {        
+        width: 360px;
         margin-top: 0px;
         margin-right: auto;
         margin-bottom: 30px;
         margin-left: auto;
 
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.62;
+        
+        
         align-items: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #ffffff;
+
+        @include tablet {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+        }
+        @include desktop {
+            width: 696px;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;        
+        }   
     }
 
     &__button {

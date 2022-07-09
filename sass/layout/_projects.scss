@@ -1,22 +1,14 @@
 .projects {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     &__item {
-        width: calc((100% - 60px) / 3);
-        margin-right: 30px;
-        margin-bottom: 30px;
-            
+        width: 100%;
+        // width: calc((100% - 60px) / 3);
+                   
         background: #ffffff;
-            
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
-    
-        &:nth-last-child(-n + 3) {
-            margin-bottom: 0;
-        }
+        border: none;
     }
-
     &__link {
         display: block;
 
@@ -83,10 +75,4 @@
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
     }
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }

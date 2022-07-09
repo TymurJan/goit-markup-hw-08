@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,10 @@
 <body>
     <!--Шапка страници-->
     <header class="header">
-      <div class="nav container">
-            <nav class="header-nav nav">
+      <div class="container container--nav">
+            <nav class="header-nav">
                 <a class="logo logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-                <ul class="nav__list list">
+                <ul class="nav list">
                     <li class="nav__item">
                         <a href="./index.html" class="nav__link link current">Студия</a>
                     </li>
@@ -46,6 +46,11 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button">
+                <svg class="menu" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
       </div>
     </header>
     <!--Уникальный контент страници-->
@@ -102,7 +107,7 @@
             </div>        
         </section>
         <!--Чем мы занимаемся--> 
-        <section class="section work">
+        <!-- <section class="section work">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="work__list list">
@@ -126,14 +131,38 @@
                     </li>
                 </ul>
             </div>            
-       </section>
+        </section> -->
         <!--Наша команда-->
         <section class="section team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img src="./images/f1.jpg" alt="foto" width="270" />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/f1.jpg 1x, 
+                                    ./images/f1-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"    
+                            />
+                            <source
+                                srcset="
+                                    ./images/f1-tab.jpg 1x, 
+                                    ./images/f1-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f1-mob.jpg 1x, 
+                                    ./images/f1-mob-2x.jpg 2x
+                                "
+                                media="(min-width: 480px)"
+                            />
+                            <img src="./images/f1-mob.jpg" alt="foto" width="450" />
+                        </picture>
+                        
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p class="team__position">Product Designer</p>
                         <ul class="soc list">
@@ -160,7 +189,31 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/f2.jpg" alt="foto" width="270" />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/f2.jpg 1x, 
+                                    ./images/f2-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f2-tab.jpg 1x, 
+                                    ./images/f2-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f2-mob.jpg 1x, 
+                                    ./images/f2-mob-2x.jpg 2x
+                                "
+                                media="(min-width: 480px)"
+                            />
+                            <img src="./images/f2-mob.jpg" alt="foto" width="450" />
+                        </picture>
+                        
                         <h3 class="team__title">Ольга Репина</h3>
                         <p class="team__position">Frontend Developer</p>
                         <ul class="soc list">
@@ -187,7 +240,31 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/f3.jpg" alt="foto" width="270" />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/f3.jpg 1x, 
+                                    ./images/f3-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f3-tab.jpg 1x, 
+                                    ./images/f3-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f3-mob.jpg 1x, 
+                                    ./images/f3-mob-2x.jpg 2x
+                                "
+                                media="(min-width: 480px)"
+                            />
+                            <img src="./images/f3-mob.jpg" alt="foto" width="450" />
+                        </picture>
+                        
                         <h3 class="team__title">Николай Тарасов</h3>
                         <p class="team__position">Marketing</p>
                         <ul class="soc list">
@@ -214,7 +291,31 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/f4.jpg" alt="foto" width="270" />
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/f4.jpg 1x, 
+                                    ./images/f4-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f4-tab.jpg 1x, 
+                                    ./images/f4-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/f4-mob.jpg 1x, 
+                                    ./images/f4-mob-2x.jpg 2x
+                                "
+                                media="(min-width: 480px)"
+                            />
+                            <img src="./images/f4-mob.jpg" alt="foto" width="450" />
+                        </picture>
+                        
                         <h3 class="team__title">Михаил Ермаков</h3>
                         <p class="team__position">UI Designer</p>
                         <ul class="soc list">
@@ -244,10 +345,10 @@
             </div>
         </section>
         <!-- Постоянные клиенты -->
-        <section class="section customers">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
-                <ul class="customers__list list">
+                <ul class="customers list">
                     <li class="customers__item">
                         <a href="a" class="customers__link link" >
                             <svg class="customers__icon" width="106" height="60">
@@ -352,7 +453,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btn" data-modal-close>
                 <svg class="close-btn__icon">
@@ -432,7 +533,7 @@
                 <button type="submit" class="send-button">Отправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script> 
 </body>
 </html> 

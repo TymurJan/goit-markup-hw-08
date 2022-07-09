@@ -1,17 +1,22 @@
 .team {
-    padding-bottom: 94px;
     background: #f5f4fa;
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
-
     &__item {
+        width: 100%;
         background: #ffffff;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        & + & {
-            margin-left: 30px;
+
+        @include tablet {
+                width: calc((100% - 30px) / 2);
+            }
+        @include desktop {
+            width: calc((100% - 90px) / 4);
         }
     }
 
@@ -20,6 +25,7 @@
         padding-top: 30px;
         font-size: 16px;
         line-height: 1.19;
+
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
@@ -34,4 +40,11 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
