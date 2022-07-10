@@ -15,7 +15,7 @@
 <body>
     <!--Шапка страници-->
     <header class="header">
-      <div class="container container--nav">
+        <div class="container container--nav">
             <nav class="header-nav">
                 <a class="logo logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
                 <ul class="nav list">
@@ -46,12 +46,68 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button">
-                <svg class="menu" width="16" height="12">
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="40" height="40">
                     <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
                 </svg>
             </button>
-      </div>
+            <div class="menu is-hidden">
+                <div class="container">
+                    <button type="button" class="menu-close">
+                        <svg class="menu-close__icon" width="40" height="40">
+                            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu__list list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link link current">Студия</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./portfolio.html" class="menu__link link">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link link">Контакты</a>
+                        </li>
+                    </ul>                
+                    <div class="menu-bottom">
+                        <ul class="menu-contacts list">
+                            <li class="menu-contacts__item">
+                                <a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link--style link">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="menu-contacts__item">
+                                <a href="info@devstudio.com" class="menu-contacts__link link">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-soc list">
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!--Уникальный контент страници-->
     <main>
@@ -453,7 +509,7 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btn" data-modal-close>
                 <svg class="close-btn__icon">
@@ -533,7 +589,8 @@
                 <button type="submit" class="send-button">Отправить</button>
             </form>
         </div>
-    </div> -->
-    <script src="./js/modal.js"></script> 
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html> 

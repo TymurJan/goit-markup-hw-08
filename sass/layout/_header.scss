@@ -11,12 +11,8 @@
 
 .logo--header {
     color: var(--secondary-text-color);
-
-    @include mobile {
-        padding-top: 16px;
-        padding-bottom: 16px;
-
-    }
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .logo__accent {
@@ -29,9 +25,120 @@
     justify-content: flex-start;
 }
 
+.menu-open {
+    display: block;
+    margin: 10px 0 10px auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    &__icon:hover,
+    &__icon:focus {
+        fill: var(--accent-color);
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 0;
+    &__list {
+        padding-left: 25px;
+    }
+    &__item + &__item {
+        margin-top: 32px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu-contacts {
+    padding-left: 25px;
+    &__item {
+        margin-bottom: 32px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #757575;
+        &--style {
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;            
+            color: var(--accent-color);
+        }
+    }
+
+}
+
+.menu-soc {
+    display: flex;
+    padding-left: 25px;
+    margin-top: 64px;
+    &__item + &__item {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &__item:not(:last-child) {
+        padding-right:  10px;
+    }
+    &__item:not(:first-child) {
+        padding-left: 10px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;        
+        color: var(--accent-color);
+    }
+}
+
+.menu-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    
+    &__icon:hover,
+    &__icon:focus {
+        fill: var(--accent-color);
+    }
+}
+
 .nav {
     display: none;
-    // display: flex;
+
+    @include tablet {
+       display: flex; 
+    }
+
     margin-left: 93px;
     
     &__item {
@@ -84,7 +191,11 @@
 
 .contacts {
     display: none;
-    // display: flex;
+
+    @include tablet {
+        display: flex;
+    }
+    
     margin-left: auto;
     &__item {
         display: flex;
