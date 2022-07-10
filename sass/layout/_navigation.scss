@@ -1,5 +1,7 @@
 .navigation {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     justify-content: center;
 
     &--list {
@@ -35,6 +37,6 @@
     }
 }
 
-.navigation__item + .navigation__item {
-    margin-left: 8px;
-}
+// .navigation__item + .navigation__item {
+//     margin-left: 8px;
+// }

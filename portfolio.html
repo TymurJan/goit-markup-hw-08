@@ -15,11 +15,11 @@
 
 <body>
     <!--Шапка страници-->
-    <!-- <header class="header">
-        <div class="container nav">
-            <nav class="header-nav nav">
-                <a class="logo  logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-                <ul class="nav__list list">
+    <header class="header">
+        <div class="container container--nav">
+            <nav class="header-nav">
+                <a class="logo logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+                <ul class="nav list">
                     <li class="nav__item">
                         <a href="./index.html" class="nav__link link">Студия</a>
                     </li>
@@ -47,15 +47,76 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <div class="menu is-hidden">
+                <div class="container">
+                    <button type="button" class="menu-close">
+                        <svg class="menu-close__icon" width="40" height="40">
+                            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu__list list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link link">Студия</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./portfolio.html" class="menu__link link current">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="menu-bottom">
+                        <ul class="menu-contacts list">
+                            <li class="menu-contacts__item">
+                                <a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link--style link">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="menu-contacts__item">
+                                <a href="info@devstudio.com" class="menu-contacts__link link">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-soc list">
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="menu-soc__item">
+                                <a href="a" class="menu-soc__link link">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header> -->
+    </header>
     <!--Уникальный контент страници-->
     <main>
         <!--main-->
         <section class="section portfolio">
             <div class="container ">
                 <h1 class="visually-hidden">navigation</h1>
-                <!-- <ul class="navigation navigation--list list">
+                <ul class="navigation navigation--list list">
                     <li class="navigation__item">
                         <button type="button" class="navigation__btn link">Все</button>
                     </li>
@@ -71,36 +132,12 @@
                     <li class="navigation__item">
                         <button type="button" class="navigation__btn link">Маркетинг</button>
                     </li>
-                </ul> -->
+                </ul>
                 <ul class="projects list">
                     <li class="projects__item">
                         <a href="fgh" class="projects__link link">
                             <div class="projects__images">
-                                <picture>
-                                    <source
-                                        srcset="
-                                            ./images/f4.jpg 1x, 
-                                            ./images/f4-2x.jpg 2x
-                                        "
-                                        media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                        srcset="
-                                            ./images/f4-tab.jpg 1x, 
-                                            ./images/f4-tab-2x.jpg 2x
-                                        "
-                                        media="(min-width: 768px)"
-                                    />
-                                    <source
-                                        srcset="
-                                            ./images/f4-mob.jpg 1x, 
-                                            ./images/f4-mob-2x.jpg 2x
-                                        "
-                                        media="(min-width: 480px)"
-                                    />
-                                    <img src="./images/img(1).jpg" alt="JPG" width="370">
-                                </picture>
-                                
+                                <img src="./images/img(1).jpg" alt="JPG" width="370">
                                 <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -294,6 +331,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

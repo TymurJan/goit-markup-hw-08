@@ -1,4 +1,8 @@
 .work {
+    display: none;
+    @include desktop {
+        display: contents;
+    }
     padding-bottom: 94px;
     .work__list {
         display: flex;

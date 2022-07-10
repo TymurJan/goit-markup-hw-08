@@ -6,8 +6,13 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: auto;
+  @include desktop {
+    width: 528px;
+    height: 581px;  
+  }
+   
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,7 +28,11 @@
     padding: 0;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    @include desktop {
+      line-height: 1.15;
+    }
+  
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
@@ -136,7 +145,8 @@
 }
 
 .confirmation {
-  margin-left: 14px;
+  width: 100%;
+  // margin-left: 14px;
 }
 
 .confirmation-input:checked + .confirmation-label::before {
@@ -152,12 +162,16 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
+  @include desktop {
+    line-height: 1.71;
+  }
+   
   letter-spacing: 0.03em;
   color: #757575;
   &::before {
     content: "";
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     border: 2px solid var(--secondary-text-color);
     border-radius: 2px;
