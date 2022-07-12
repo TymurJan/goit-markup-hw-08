@@ -74,6 +74,9 @@
     @include tablet {
         display: none;
     }
+
+    transform: translateY(0);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contacts {
@@ -135,6 +138,7 @@
 
 .menu.is-hidden {
     display: none;
+    transform: translateY(-100%);    
 }
 
 .nav {
