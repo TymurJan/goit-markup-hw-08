@@ -116,11 +116,16 @@
   width: 100%;
   text-align: center;
 
+  @include tablet {
+    width: 450px;
+  }
+
   @include desktop {
     text-align: left;
     margin-left: 93px;
     width: 570px;
   }
+
   &__text {
     font-weight: 700;
     font-size: 14px;
