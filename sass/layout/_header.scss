@@ -50,8 +50,9 @@
   height: 100vh;
   padding: 48px 0;
   z-index: 1;
+  opacity: 1;
 
-  transform: scale(1);
+  transform: translate(0, 0) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &__list {
@@ -81,7 +82,7 @@
 }
 
 .menu.is-hidden {
-  transform: scale(0);
+  transform: translate(40%, -46%) scale(0);
 }
 
 .menu-contacts {
