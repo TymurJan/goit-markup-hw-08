@@ -595,6 +595,13 @@ body {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .menu.is-hidden {
+    display: none;
+    -webkit-transform: translate(40%, -46%) scale(0);
+            transform: translate(40%, -46%) scale(0);
+  }
+}
 
 @media screen and (max-width: 767px) {
   .nav {
