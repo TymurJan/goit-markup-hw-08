@@ -62,7 +62,7 @@
     margin-bottom: 30px;
     margin-left: auto;
 
-    font-weight: 700;
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
 
@@ -71,13 +71,8 @@
     text-transform: uppercase;
     color: #ffffff;
 
-    @include tablet {
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 1.62;
-    }
     @include desktop {
-      width: 696px;
+      max-width: 696px;
       font-weight: 900;
       font-size: 44px;
       line-height: 1.36;

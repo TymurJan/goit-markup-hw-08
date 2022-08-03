@@ -1,11 +1,17 @@
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
-  width: 450px;
+  max-width: 450px;
   height: auto;
+
+  @include tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 
   @include desktop {
     width: 528px;
@@ -23,6 +29,7 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
   }
+
   &__title {
     margin: 0;
     padding: 0;
@@ -65,6 +72,10 @@
 .close-btn:hover,
 .close-btn:focus + .close-btn__icon {
   fill: var(--accent-color);
+}
+
+.modal__form {
+  height: auto;
 }
 
 .form-field {

@@ -16,8 +16,18 @@
     <!--Шапка страници-->
     <header class="header">
         <div class="container container--nav">
-            <nav class="header-nav">
-                <a class="logo logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+            <a class="logo logo--header link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <nav class="menu is-hidden">
+                <button type="button" class="menu-close">
+                    <svg class="menu-close__icon" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>                
                 <ul class="nav list">
                     <li class="nav__item">
                         <a href="./index.html" class="nav__link link current">Студия</a>
@@ -29,97 +39,61 @@
                         <a href="" class="nav__link link">Контакты</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a href="info@devstudio.com" class="contacts__link link">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link link">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#icon-mobil"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-            <button type="button" class="menu-open">
-                <svg class="menu-open__icon" width="40" height="40">
-                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
-                </svg>
-            </button>
-            <div class="menu is-hidden">
-                <div class="container">
-                    <button type="button" class="menu-close">
-                        <svg class="menu-close__icon" width="40" height="40">
-                            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
-                        </svg>
-                    </button>
-                    <ul class="menu__list list">
-                        <li class="menu__item">
-                            <a href="./index.html" class="menu__link link current">Студия</a>
+                <div class="menu__bottom">
+                    <ul class="contacts list">
+                        <li class="contacts__item">
+                            <a href="info@devstudio.com" class="contacts__link link">
+                                <svg class="contacts__icon" width="16" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="./portfolio.html" class="menu__link link">Портфолио</a>
+                        <li class="contacts__item">
+                            <a href="tel:+380961111111" class="contacts__link contacts__link--style link">
+                                <svg class="contacts__icon" width="10" height="16">
+                                    <use href="./images/symbol-defs.svg#icon-mobil"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link link">Контакты</a>
+                    </ul>
+                    <ul class="menu-soc list">
+                        <li class="menu-soc__item">
+                            <a href="a" class="menu-soc__link link">
+                                Instagram
+                            </a>
                         </li>
-                    </ul>                
-                    <div class="menu-bottom">
-                        <ul class="menu-contacts list">
-                            <li class="menu-contacts__item">
-                                <a href="tel:+380961111111" class="menu-contacts__link menu-contacts__link--style link">
-                                    +38 096 111 11 11
-                                </a>
-                            </li>
-                            <li class="menu-contacts__item">
-                                <a href="info@devstudio.com" class="menu-contacts__link link">
-                                    info@devstudio.com
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="menu-soc list">
-                            <li class="menu-soc__item">
-                                <a href="a" class="menu-soc__link link">
-                                    Instagram
-                                </a>
-                            </li>
-                            <li class="menu-soc__item">
-                                <a href="a" class="menu-soc__link link">
-                                    Twitter
-                                </a>
-                            </li>
-                            <li class="menu-soc__item">
-                                <a href="a" class="menu-soc__link link">
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="menu-soc__item">
-                                <a href="a" class="menu-soc__link link">
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li class="menu-soc__item">
+                            <a href="a" class="menu-soc__link link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="menu-soc__item">
+                            <a href="a" class="menu-soc__link link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="menu-soc__item">
+                            <a href="a" class="menu-soc__link link">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+                
+            </nav>          
         </div>
     </header>
     <!--Уникальный контент страници-->
     <main>
         <!--Hero-->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>                        
-        </section> -->
-       <!--Особенносьти-->
-        <!-- <section class="section">
+        </section>
+        <!--Особенносьти-->
+        <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Особенносьти</h2>
                 <ul class="features list">
@@ -161,7 +135,7 @@
                     </li>
                 </ul>
             </div>        
-        </section> -->
+        </section>
         <!--Чем мы занимаемся--> 
         <section class="section work">
             <div class="container">
@@ -169,19 +143,37 @@
                 <ul class="work__list list">
                     <li class="work__item">
                         <div class="work__images">
-                            <img src="./images/img1.jpg" alt="foto" width="370" />
+                            <img
+                                srcset="
+                                    ./images/img1.jpg 1x, 
+                                    ./images/img1-2x.jpg 2x
+                                "
+                                src="./images/img1.jpg" alt="foto" width="370"
+                            />
                             <h3 class="work__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>             
                     </li>
                     <li class="work__item">
                         <div class="work__images">
-                            <img src="./images/img2.jpg" alt="foto" width="370" />
+                            <img
+                                srcset="
+                                    ./images/img2.jpg 1x, 
+                                    ./images/img2-2x.jpg 2x
+                                "
+                                src="./images/img2.jpg" alt="foto" width="370"
+                            />
                             <h3 class="work__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>                        
                     </li>
                     <li class="work__item">
                         <div class="work__images">
-                            <img src="./images/img3.jpg" alt="foto" width="370" />
+                            <img 
+                                srcset="
+                                    ./images/img3.jpg 1x, 
+                                    ./images/img3-2x.jpg 2x
+                                "
+                                src="./images/img3.jpg" alt="foto" width="370"
+                            />
                             <h3 class="work__name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         </div>                        
                     </li>
@@ -401,7 +393,7 @@
             </div>
         </section>
         <!-- Постоянные клиенты -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="customers list">
@@ -410,40 +402,46 @@
                             <svg class="customers__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-Client-1"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="customers__item">
                         <a href="a" class="customers__link link">
                             <svg class="customers__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-Client-2"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="customers__item">
                         <a href="a" class="customers__link link">
                             <svg class="customers__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-Client-3"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="customers__item">
                         <a href="a" class="customers__link link">
                             <svg class="customers__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-Client-4"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="customers__item">
                         <a href="a" class="customers__link link">
                             <svg class="customers__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-Client-5"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="customers__item">
                         <a href="a" class="customers__link link">
                             <svg class="customers__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-Client-6"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- Підвал -->
     <footer class="footer">
@@ -509,7 +507,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden container" data-modal>
         <div class="modal">
             <button class="close-btn" data-modal-close>
                 <svg class="close-btn__icon">
