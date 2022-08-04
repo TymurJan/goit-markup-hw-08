@@ -1,64 +1,60 @@
 .section {
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;    
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }    
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-}
+  padding-left: 15px;
+  padding-right: 15px;
 
-.portfolio {
-    margin-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-    }
+  margin-top: 0;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
-    font-size: 28px;
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-    }   
+  font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 
 .logo {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
 
-    @include desktop {
-        font-size: 26px;
-        line-height: 1.19;
-    }
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
