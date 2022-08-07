@@ -432,7 +432,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #757575;
@@ -440,6 +440,7 @@ body {
 @media screen and (min-width: 1200px) {
   .confirmation-label {
     line-height: 1.71;
+    font-size: 14px;
   }
 }
 .confirmation-label::before {
@@ -887,6 +888,7 @@ body {
   padding: 10px 32px;
   min-width: 200px;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   -webkit-box-align: center;
@@ -967,12 +969,14 @@ body {
 
 .work {
   display: none;
-  padding-bottom: 94px;
 }
 @media screen and (min-width: 1200px) {
   .work {
-    display: contents;
+    display: block;
   }
+}
+.work--change {
+  padding-top: 0;
 }
 .work .work__list {
   display: -webkit-box;
@@ -1183,12 +1187,6 @@ img {
 .info-list__item {
   padding: 0px;
   margin-bottom: 9px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 .info-list__item:last-child {
   margin-bottom: 0;
@@ -1208,8 +1206,14 @@ img {
   color: var(--accent-color);
 }
 
-.contacts__link--size {
+.contacts__link--style {
   padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ---------------------- */

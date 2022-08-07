@@ -1,9 +1,12 @@
 .work {
   display: none;
+
   @include desktop {
-    display: contents;
+    display: block;
   }
-  padding-bottom: 94px;
+  &--change {
+    padding-top: 0;
+  }
   .work__list {
     display: flex;
     flex-wrap: wrap;
